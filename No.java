@@ -1,15 +1,27 @@
 
 public class No {
-   public  int dado;
-   public  No next;
-   
-   No(int dd){
-       this.dado = dd;
-       this.next = null;
-   }
-   
-   public void mostrar(){
-       System.out.println("Dado = " + this.dado + "\nNext = " + this.next);
-   }
-   
+    private Cliente dado;
+    private No next;
+    
+    public No(Cliente dado){
+        this.dado = dado;
+        this. next = null;
+    }
+    
+     public void setNext(No next) {
+        this.next = next;
+    }
+
+    public void setDado(Cliente dado) {
+        this.dado = dado;
+    }
+
+    public No getNext() {
+        return next;
+    }
+
+    public Cliente getDado() {
+        return dado;
+    }
+       
 }
