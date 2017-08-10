@@ -17,4 +17,11 @@ public class processoIterativo {
         }
         return soma;
     }
+    public static int somaRecursiva(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n + somaRecursiva(n - 1);
+        }
+    }
 }
